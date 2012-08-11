@@ -1,0 +1,144 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Wildcard Module</PackageName>
+      <Author>Adam Conn</Author>
+      <Version>0.9</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>*** INSTRUCTIONS FOR CMS 6.4 ***
+When using this module with CMS 6.4 you should use the 
+action ReplaceWildcardsInUrlAction.  The route at the 
+following location provides an example of how to use 
+this action:
+
+/sitecore/system/Modules/Wildcards/Routes/Blog Route for 64
+
+DO NOT use the action ReplaceWildcardInUrlAction. 
+The ruleset editor interface in 6.4 does not allow 
+a specific action to be applied multiple times. 
+
+*** INSTRUCTIONS FOR CMS 6.5 ***
+When using this module with CMS 6.5 you may use 
+either ReplaceWildcardsInUrlAction or 
+ReplaceWildcardInUrlAction.  The route at the 
+following location provides an example of 
+how to use the ReplaceWildcardInUrlAction action:
+
+/sitecore/system/Modules/Wildcards/Routes/Blog Route for 65
+</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/layout/Sublayouts/Wildcards/{6C7591AD-A426-444E-ABB5-5B5416B63FF3}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Sublayouts/Wildcards/Display Token Values/{74303D49-C070-4A4F-B1F5-84D8FCF81E6F}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Sublayouts/Wildcards/Display Dynamic Urls/{B5DECA3D-45E3-4F0F-8F79-B438E59E383F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Wildcards/{58CDEEB2-9C0E-4DBF-8123-2E77B9E816DD}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Wildcards/Routes/{56B064E4-DCBF-4BA8-98CA-12539438C188}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Wildcards/Routes/Blog Route for 65/{CC12788A-1493-4F7E-A21A-3BE6060372ED}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Wildcards/Tokens/{4CD9CD8B-743F-42F4-9FAB-E3F0128443D9}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Wildcards/Tokens/Blog Name/{EA45D1A3-AE7F-4CDB-AE3A-C68A0726FA0A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Wildcards/Tokens/Group Name/{9EEA0B0C-06E7-4AD7-A8B7-D58816610714}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Wildcards/{3875BD5F-DA54-48FF-9464-301BA615E5BE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Wildcards/Actions/{C0946B09-EDE9-416E-B821-0B852A4FAA2A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Wildcards/Actions/Wildcards/{0B29C5E6-0028-4934-ABEA-7A7EDDC8CED9}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Wildcards/Actions/Wildcards/ReplaceWildcardInUrlAction/{65D3BF3D-F1DB-4978-A7F1-E60E5A013509}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Wildcards/Conditions/{DCCD0B20-C8D5-4C55-B57B-932DAA388052}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Wildcards/Conditions/Wildcards/{7F9C755B-E787-48CD-948B-B499F297774E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Wildcards/Conditions/Wildcards/HasWildcardItemsCondition/{B29309E8-987D-4693-8C61-01DBAD8574C9}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/{1FFFAF7D-8FEE-49D6-BDF8-A3C7234D889E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Route/__Standard Values/{B37A4A59-694A-4AD5-AD84-6F68AA0D1949}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Route/{CB7C4365-AED1-475B-AEE5-4888DC12ACDE}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Route/Data/{CB9FB9B2-C90C-4B47-B513-61F5A6C1D32F}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Route/Data/Items/{F0784028-1A0A-4F35-A5EC-FF8CFAF80405}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Route/Data/Rules/{4AE06BCB-A3EB-43F6-BE36-592372C8AA52}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Token/__Standard Values/{5C5DB8FE-9173-4F16-B405-8C56E8216CAA}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Token/{39BBE774-3145-4D71-8809-34875B9718CC}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Token/Data/{CD7F2459-9977-488C-99E2-354B795F437B}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Token/Data/Value/{969C78CA-2262-4672-8EA1-AD60C1FE2171}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Wildcard Rendering Parameters/__Standard Values/{5DCAF10F-A718-44C9-8A81-06903B44CA1C}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Wildcard Rendering Parameters/{8174513F-C5D9-4D8E-9F8A-4915DBE324D9}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Wildcard Rendering Parameters/Wildcards/{CE76D334-7D1C-4AC9-8DBA-271F3FD653FC}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Wildcard Rendering Parameters/Wildcards/Target Item/{B3D6EABF-4F24-4A30-8735-59A074F025D1}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Wildcards/Position Mappings/{EE98162C-3C29-4D46-B304-E207B915CD5C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Wildcards/Position Mappings/Blog Mappings/{528ECEF0-2C2A-4B88-9124-F7BAC08C74B8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Wildcards/Position Mappings/Blog Mappings/Position 1/{4870988F-BDC3-4D7B-AC92-0AD07DB0F8A4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Wildcards/Position Mappings/Blog Mappings/Position 2/{50E2C88D-62C6-47DF-8394-E4E00FFE3D75}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Wildcards/Routes/Blog Route for 64/{D25A409F-567B-4C41-8540-959BFE3B5B07}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Settings/Rules/Wildcards/Actions/Wildcards/ReplaceWildcardsInUrlAction/{1F129636-E01A-476B-B35D-A36D30825E51}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Mapping/{7B8399A6-DBFE-4515-83F9-C3E4301A53E4}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Mapping/Data/{383AB218-1076-49CA-90A8-7634E1037A9F}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Mapping/Data/Position/{711F2DCF-6420-42B0-89AF-9A2327E123B0}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Mapping/Data/Token/{E6A9D87E-8560-4C29-A25F-8E3B401EBFDF}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Mappings/__Standard Values/{A7DF49AB-6156-4C9B-BC21-EE5EDC9520EA}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Wildcards/Mappings/{7C2BEF49-F5EC-4212-9540-DEA8BD89A15D}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>items</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Sitecore.Marketing.Wildcards.config</x-item>
+        <x-item>/bin/Sitecore.Marketing.Wildcards.dll</x-item>
+        <x-item>/bin/Sitecore.Marketing.Wildcards.pdb</x-item>
+        <x-item>/layouts/Wildcards/</x-item>
+        <x-item>/layouts/Wildcards/DisplayTokenValues.ascx</x-item>
+        <x-item>/layouts/Wildcards/DisplayTokenValues.ascx.cs</x-item>
+        <x-item>/layouts/Wildcards/DisplayTokenValues.ascx.designer.cs</x-item>
+        <x-item>/layouts/Wildcards/DisplayDynamicUrls.ascx</x-item>
+        <x-item>/layouts/Wildcards/DisplayDynamicUrls.ascx.cs</x-item>
+        <x-item>/layouts/Wildcards/DisplayDynamicUrls.ascx.designer.cs</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

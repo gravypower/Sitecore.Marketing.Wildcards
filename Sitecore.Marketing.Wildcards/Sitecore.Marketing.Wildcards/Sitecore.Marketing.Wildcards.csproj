@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9C2F0D51-52FC-422C-B240-C85F6DE5F670}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sitecore.Marketing.Wildcards</RootNamespace>
+    <AssemblyName>Sitecore.Marketing.Wildcards</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\..\Dependency\Installers\Sitecore\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\Settings.cs" />
+    <Compile Include="Controls\DisplayTokenValues.ascx.cs">
+      <DependentUpon>DisplayTokenValues.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DisplayTokenValues.ascx.designer.cs">
+      <DependentUpon>DisplayTokenValues.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DisplayDynamicUrls.ascx.cs">
+      <DependentUpon>DisplayDynamicUrls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\DisplayDynamicUrls.ascx.designer.cs">
+      <DependentUpon>DisplayDynamicUrls.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IFindItem.cs" />
+    <Compile Include="Pipelines\WildcardProcessor.cs" />
+    <Compile Include="Rules\HasWildcardItemsCondition.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rules\MappingItem.cs" />
+    <Compile Include="Rules\ReplaceWildcardInUrlAction.cs" />
+    <Compile Include="Rules\ReplaceWildcardsInUrlAction.cs" />
+    <Compile Include="Rules\TokenItem.cs" />
+    <Compile Include="Rules\WildcardRuleContext.cs" />
+    <Compile Include="Token.cs" />
+    <Compile Include="TokenizedString.cs" />
+    <Compile Include="WildcardInformation.cs" />
+    <Compile Include="WildcardManager.cs" />
+    <Compile Include="WildcardProvider.cs" />
+    <Compile Include="WildcardProviderCollection.cs" />
+    <Compile Include="WildcardRendering.cs" />
+    <Compile Include="WildcardTokenizedString.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Config\Include\Sitecore.Marketing.Wildcards.config" />
+    <None Include="Sitecore installation package\Wildcard Module-0.9.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\DisplayTokenValues.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Controls\DisplayDynamicUrls.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Sitecore installation package\Wildcard Module.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
